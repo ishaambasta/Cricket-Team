@@ -1,0 +1,176 @@
+header{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    color: white;
+    background-color: rgb(41, 36, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin:0;
+   
+}
+
+body{
+    background-color: rgb(41, 36, 77);
+    background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000003226_1714596295_pics1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    text-align: center;
+    margin: 0;
+    padding-top: 320px;
+    filter: brightness(0.9);
+
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+.intro {
+    position: fixed;   /* make it fixed */
+    top: 60px;         /* push it just below your header (which is 60px tall) */
+    left: 0;
+    width: 100%;
+    background: transparent; /* keep background transparent or set a color if you want */
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 2; 
+
+}
+
+main div{       
+   display:flex;
+   justify-content: center;
+   gap: 2px;
+   z-index: 3;   /* ensure it's above the intro section */
+   
+     
+}
+
+.coach-card{
+    width: 250px;
+    height: 200px;
+    border: 2px solid white;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+}
+
+.coach-card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+       
+} 
+
+.overlay-text {
+    position: relative;
+
+    bottom: 0px;
+}
+ 
+
+.player-list {
+  width: 320px;
+  height: 450px;              /* total box height */
+  margin: 30px auto;
+  padding: 15px;
+  background-color: white;    /* 👈 white background */
+  border: 3px solid  rgb(41, 36, 77);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  z-index: 3;
+  position: relative;   /* Important */
+  
+}
+
+
+.player-list h2 {
+  color:  rgb(41, 36, 77);
+  margin-bottom: 10px;
+
+}
+
+.scroll-box {
+  height: 380px;              /* area that will scroll */
+  overflow-y: auto;           /* enables vertical scrolling */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+ 
+}
+
+.scroll-box img {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid white;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ z-index: 1;
+}
+
+.rank-table table {
+            width: 50%;
+            min-width: 300px; 
+            margin: 100px auto;
+            border-collapse: collapse;
+            background-color: white;
+            
+        }
+        
+        .rank-table th, .rank-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            
+        }
+        
+        .rank-table th {
+            background-color: rgb(41, 36, 77);
+            padding: 15px 20px;
+            text-align: left;
+            
+        }
+
+footer{
+    position: relative;   /* relative to fix the footer at the botton*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    color: white;
+    background-color:  rgb(41, 36, 77);
+    z-index: 100;
+    margin:0;
+    padding-top:10px;
+}
+
+
+
+
+
+
